@@ -42,7 +42,7 @@ public class GoodsServiceImpl implements GoodsService{
 			//String path = request.getServletContext().getRealPath("/images/");
 			//获得上传文件原名
 			//上传文件路径（开发环境）
-			String path = "C:\\workspace-spring-tool-suite-4-4.9.0.RELEASE\\eBusiness\\src\\main\\resources\\static\\images";
+			String path = "D:\\SSM+SpringBoot+Vue.js3\\实验报告\\eBusiness\\src\\main\\resources\\static\\images";
 			//获得上传文件原名
 			String fileName = myfile.getOriginalFilename();
 			//对文件重命名
