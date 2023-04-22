@@ -15,6 +15,16 @@ public class Goods {
 	private int buyNumber;//加入购物车使用
 	private int isAdvertisement;
 	private int isRecommend;
+	private String gdetails;
+
+	public String getGdetails() {
+		return gdetails;
+	}
+
+	public void setGdetails(String gdetails) {
+		this.gdetails = gdetails;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -87,4 +97,5 @@ public class Goods {
 	public void setFileName(MultipartFile fileName) {
 		this.fileName = fileName;
 	}
+
 }

@@ -57,12 +57,14 @@
 								<th>商品ID</th>
 								<th>商品名称</th>
 								<th>商品类型</th>
+								<th>商品详情</th>
 								<th>操作</th>
 							</tr>
 							<tr th:each="gds:${allGoods}">
 								<td th:text="${gds.id}"></td>
 								<td th:text="${gds.gname}"></td>
 								<td th:text="${gds.typename}"></td>
+								<td th:text="${gds.gdetails}"></td>
 								<td>
 									<a th:href="@{goods/detail(id=${gds.id},act=detail)}" target="_blank">详情</a>
 									<a th:href="@{goods/detail(id=${gds.id},act=update)}" target="_blank">修改</a>
@@ -70,7 +72,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td colspan="4" align="right">
+								<td colspan="5" align="right">
 									<ul class="pagination">
 										<li><a>第<span th:text="${currentPage}" ></span>页</a></li>
 										<li><a>共<span th:text="${totalPage}" ></span>页</a></li>
